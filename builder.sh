@@ -19,13 +19,13 @@ else
     version="latest"
 fi
 
-#function action_build() {
-#    docker run --rm -w /app -v $HOME/.m2:/root/.m2 -v `pwd`:/app \
-#        maven:3.6.1-jdk-11-slim \
-#        mvn versions:set -DgenerateBackupPoms=false -DnewVersion=${version}
-#    #编译，运行单元测试和集成测试
-#    cd dev && ./run.sh
-#}
+function action_build() {
+    docker run --rm -w /app -v $HOME/.m2:/root/.m2 -v `pwd`:/app \
+        maven:3.6.1-jdk-11-slim \
+        mvn versions:set -DgenerateBackupPoms=false -DnewVersion=${version}
+    #编译，运行单元测试和集成测试
+    cd dev && ./run.sh
+}
 #
 #function action_deploy() {
 #
