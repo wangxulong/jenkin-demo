@@ -2,10 +2,11 @@
 
 action=$1
 
-if [[${action} == "deploy"]]; then
+if [[ ${action} == "deploy" ]]; then
     echo "deploy"
 fi
 
-if [[${action} == "build"]]; then
-    echo "deploy"
+if [[ ${action} == "build" ]]; then
+    pwd
+    echo "build"
 fi
