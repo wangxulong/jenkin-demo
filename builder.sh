@@ -1,5 +1,8 @@
 #!/usr/bin/env bash
 
+
+REGISTRY=image.overlay2.lsn.im
+
 action=$1
 
 if [[ ${action} == "deploy" ]]; then
@@ -7,6 +10,6 @@ if [[ ${action} == "deploy" ]]; then
 fi
 
 if [[ ${action} == "build" ]]; then
-    pwd
-    echo "build"
+     pwd
+     echo "build"
 fi
