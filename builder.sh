@@ -39,5 +39,5 @@ fi
 
 if [[ ${action} == "build" ]]; then
      echo "build"
-    # action_build
+     action_build
 fi
